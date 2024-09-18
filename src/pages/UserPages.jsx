@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import { UserHeader } from "../components/UserHeader";
 
 export default function UserPages() {
   return (
-    <div>UserPages</div>
-  )
+    <>
+      <UserHeader />
+    </>
+  );
 }

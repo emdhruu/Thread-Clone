@@ -40,14 +40,16 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/:username",
-    element: <UserPages />,
-  },
-  {
-    path: "/:username/post/:p id",
-    element: <PostPages />,
+    children: [
+      {
+        path: "/:username",
+        element: <UserPages />,
+      },
+      {
+        path: "/:username/post/:p id",
+        element: <PostPages />,
+      },
+    ],
   },
 ]);
 
@@ -59,3 +61,4 @@ createRoot(document.getElementById("root")).render(
     </ChakraProvider>
   </StrictMode>
 );
+  
