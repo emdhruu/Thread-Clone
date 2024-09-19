@@ -105,6 +105,30 @@ export const UserHeader = () => {
             </Box>
           </Flex>
         </Flex>
+        <Flex w={"full"}>
+          <Flex
+            flex={1}
+            borderBottom={`1.8px solid ${
+              colorMode === "dark" ? "white" : "black"
+            }`}
+            justifyContent={"center"}
+            pb={2}
+          >
+            <Text fontWeight={"bold"} cursor={"pointer"}>
+              Threads
+            </Text>
+          </Flex>
+          <Flex
+            flex={1}
+            borderBottom={"1px solid gray"}
+            justifyContent={"center"}
+            pb={2}
+          >
+            <Text color={"gray.light"} fontWeight={"bold"} cursor={"pointer"}>
+              Replies
+            </Text>
+          </Flex>
+        </Flex>
       </VStack>
     </>
   );
